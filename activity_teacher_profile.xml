@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-65dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="50dp"
+            android:gravity="center"
+            android:shadowColor="#69696A"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="2"
+            android:text="Teacher's Profile"
+            android:textColor="#1560C1"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="10dp">
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="275dp"
+                android:layout_marginTop="0dp"
+                android:background="#4389B3"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="22dp">
+
+                <TextView
+                    android:id="@+id/edit_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Profile"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="134dp"
+                    android:layout_height="133dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/circle_background"
+                    android:contentDescription="Profile Image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ttchr" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Editable Fields -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NAME"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/usernameEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Reeja Mathew"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:enabled="false"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EMAIL"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="reejamathew@gmail.com"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:enabled="false"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PHONE"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="8921315668"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:enabled="false"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CLASS"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/classEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="1st, 2nd, 3rd YEAR"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:enabled="false"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SUBJECTS"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/subjectEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="COMPUTER APPLICATION"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:enabled="false"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="QUALIFICATIONS"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/qualificationEdit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="BCA, MCA, PhD"
+                android:textColor="#757575"
+                android:textSize="14sp"
+                android:enabled="false"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="#448AB4"
+            android:text="Edit"
+            android:textColor="#EBE5E5"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>

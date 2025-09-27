@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E5F3FD"
+    android:padding="16dp"
+    tools:context=".MarkAttendanceActivity">
+    <!-- Calendar with Card Background -->
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="34dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="50dp"
+        android:gravity="center"
+        android:shadowColor="#69696A"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:text="Mark Attendance"
+        android:textColor="#1560C1"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:background="@drawable/calen"
+            android:layout_height="wrap_content"
+            android:padding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/countText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Present: 0   Absent: 0"
+        android:shadowColor="#69696A"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="2"
+        android:textColor="#155FBF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="#FFFFFF">
+
+        <ListView
+            android:id="@+id/studentListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/calen"
+            android:divider="#E0E0E0"
+            android:dividerHeight="1dp"
+            android:padding="8dp" />
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Submit Attendance"
+        android:textAllCaps="false"
+        android:backgroundTint="#155FBF"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp" />
+</LinearLayout>

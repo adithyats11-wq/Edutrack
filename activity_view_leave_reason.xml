@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/calen">
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="34dp"
+         android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/back" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leave Reasons"
+        android:layout_marginTop="-40dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#1A237E"
+        android:layout_gravity="center"
+        android:paddingBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/searchDateEditText"
+        android:layout_width="291dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bluess"
+        android:hint="Enter date (DD-MM-YYYY)"
+        android:imeOptions="actionSearch"
+        android:inputType="date"
+        android:padding="12dp" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="315dp"
+        android:layout_marginTop="-100dp"
+        android:contentDescription="Search"
+        android:src="@drawable/searchhh" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/leaveRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" />
+</LinearLayout>

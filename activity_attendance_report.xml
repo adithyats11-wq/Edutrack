@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="34dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/back" />
+
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="267dp"
+            android:layout_marginTop="-34dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:gravity="center"
+            android:layout_marginLeft="50dp"
+            android:shadowColor="#69696A"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="2"
+            android:text="Attendance Report"
+            android:textColor="#0F6CC7"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginTop="-34dp"
+            android:layout_marginBottom="-10dp"
+            android:gravity="center"
+            android:shadowColor="#69696A"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="2"
+            android:text="Select student's Name"
+            android:textColor="#0F6CC7"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
+
+
+        <!-- Month Selector -->
+
+        <!-- Summary -->
+        <LinearLayout
+            android:layout_width="396dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="-10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/studentSpinner"
+                android:layout_width="294dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="11dp"
+                android:layout_marginTop="-50dp"
+                android:layout_marginBottom="-39dp"
+                android:background="@drawable/bluess"
+                android:padding="12dp" />
+
+            <EditText
+                android:id="@+id/searchDateEditText"
+                android:layout_width="291dp"
+                android:layout_height="52dp"
+                android:layout_marginLeft="-293dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="11dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/bluess"
+                android:hint="Enter date (MM-YYYY)"
+                android:imeOptions="actionSearch"
+                android:inputType="date"
+                android:padding="12dp" />
+
+            <ImageButton
+                android:id="@+id/searchButton"
+                android:layout_width="50dp"
+                android:layout_height="47dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginTop="50dp"
+                android:contentDescription="Search"
+                android:src="@drawable/searchhh" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvPresent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="#42A5F5"
+                android:padding="16dp"
+                android:text="0\nPresent"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvLeave"
+                android:layout_weight="1"
+                android:text="0\nLeave"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:padding="16dp"
+                android:textColor="#FFFFFF"
+                android:background="#29B6F6"
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"/>
+        </LinearLayout>
+
+        <!-- Pie Chart -->
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="24dp" />
+
+        <!-- Bar Chart -->
+        <TextView
+            android:text="Weekly Present Days"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:textColor="#1976D2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</ScrollView>
